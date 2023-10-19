@@ -11,9 +11,9 @@ class App
  {
   $this->router = new Router();
  }
- public function get(string $path)
+ public function get(string $path, array $controller)
  {
-  $this->router->add('GET', $path);
+  $this->router->add('GET', $path, $controller);
  }
  public function run()
  {
